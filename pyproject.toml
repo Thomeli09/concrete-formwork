@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "concrete-formwork"
+version = "0.0.1"
+description = "A concrete formwork computational model for the computation of the pressure exerted by fresh concrete on formwork."
+readme = "README.md"
+requires-python = ">=3.15"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Eliott Thommes" },
+]
+dependencies = [
+    "numpy>=2.5.4",
+    "matplotlib>=3.11.2",
+]
+keywords = [
+    "concrete", "formwork", "pressure", "simulation", "matplotlib", "visualization",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.15",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+[project.optional-dependencies]
+data = ["pandas>=3.0.6"]
+rich-text = ["highlight-text"]
+dev = [
+    "pandas>=3.0.6",
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "sphinx",
+    "build",
+]
+
+[project.urls]
+Homepage = "https://github.com/Thomeli09/concrete-formwork"
+Repository = "https://github.com/Thomeli09/concrete-formwork"
+Issues = "https://github.com/Thomeli09/concrete-formwork/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["concrete_formwork*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--import-mode=importlib"]
+
+[tool.ruff]
+line-length = 100
+

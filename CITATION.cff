@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software in scientific, educational, or published work,
+  please cite it using the metadata from this file.
+type: software
+title: >-
+  Concrete-formwork: A concrete formwork computational model for the computation 
+  of the pressure exerted by fresh concrete on formwork. 
+authors:
+  - family-names: Thommes
+    given-names: Eliott
+    orcid: https://orcid.org/0009-0005-0697-2438
+version: 0.0.1
+date-released: 2026-10-22
+license: GPL-3.0-or-later
+repository-code: https://github.com/Thomeli09/concrete-formwork
+url: https://github.com/Thomeli09/concrete-formwork
+keywords:
+  - scheduling
+  - matplotlib
+
+# Zenodo integration (optional):
+# 1. Enable the Zenodo webhook at zenodo.org/account/settings/github
+# 2. After first tag release, copy the concept DOI from Zenodo and add:
+#
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.XXXXXXX
+#     description: Zenodo concept DOI (resolves to latest version)
