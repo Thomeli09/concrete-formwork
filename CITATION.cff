@@ -4,7 +4,7 @@ message: >-
   please cite it using the metadata from this file.
 type: software
 title: >-
-  Coffrage: A concrete formwork computational model for the computation 
+  Concrete-formwork: A concrete formwork computational model for the computation 
   of the pressure exerted by fresh concrete on formwork. 
 authors:
   - family-names: Thommes
@@ -13,8 +13,8 @@ authors:
 version: 0.0.1
 date-released: 2026-10-22
 license: GPL-3.0-or-later
-repository-code: https://github.com/Thomeli09/concreteformwork
-url: https://github.com/Thomeli09/concreteformwork
+repository-code: https://github.com/Thomeli09/concrete-formwork
+url: https://github.com/Thomeli09/concrete-formwork
 keywords:
   - scheduling
   - matplotlib

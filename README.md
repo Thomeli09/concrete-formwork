@@ -1,4 +1,4 @@
-# Technologie des bétons et matériaux nouveaux - Coffrage
+# concrete-formwork
 
 
 
@@ -30,8 +30,8 @@ The author is not responsible for incorrect measurements, data loss, equipment d
 Clone the repository:
 
 ```bash
-git clone https://github.com/Thomeli09/ganttchart.git
-cd ganttchart
+git clone https://github.com/Thomeli09/concrete-formwork.git
+cd concrete-formwork
 ```
 
 Create a virtual environment (example commands for Windows PowerShell):
@@ -80,36 +80,30 @@ Complete scripts are stored in [`examples/`](examples/README.md):
 
 | File | What it demonstrates |
 | --- | --- |
-| [`01_gantt_basic.py`](examples/01_gantt_basic.py) | Simple task schedule and PNG export |
-| [`02_gantt_advanced.py`](examples/02_gantt_advanced.py) | Task groups, colors, weekends, fixed today, PNG/PDF |
-| [`03_gantt_dashboard.py`](examples/03_gantt_dashboard.py) | Gantt and progress curve in one figure |
-| [`04_gantt_dataframe.py`](examples/04_gantt_dataframe.py) | Optional Pandas DataFrame and CSV export |
-| [`05_visualization_basic.py`](examples/05_visualization_basic.py) | Line and bar plots |
-| [`06_visualization_advanced.py`](examples/06_visualization_advanced.py) | Multi-panel plots, uncertainty, histograms, heatmaps |
-| [`07_visualization_shapes.py`](examples/07_visualization_shapes.py) | Editable artists, geometric shapes and pie charts |
+| [`01_formwork_basic.py`](examples/01_formwork_basic.py) | Simple task schedule and PNG export |
+| [`02_concrete-formwork.py`](examples/02_concrete-formwork.py) | Task groups, colors, weekends, fixed today, PNG/PDF |
+| [`03_concrete-formwork_dashboard.py`](examples/03_concrete-formwork_dashboard.py) | Gantt and progress curve in one figure |
+| [`04_concrete-formwork_dataframe.py`](examples/04_concrete-formwork_dataframe.py) | Optional Pandas DataFrame and CSV export |
 
 After installation, run any example from the repository root:
 
 ```bash
-python examples/01_gantt_basic.py
-python examples/02_gantt_advanced.py
-python examples/03_gantt_dashboard.py
-python examples/04_gantt_dataframe.py
-python examples/05_visualization_basic.py
-python examples/06_visualization_advanced.py
-python examples/07_visualization_shapes.py
+python examples/01_formwork_basic.py
+python examples/02_concrete-formwork.py
+python examples/03_concrete-formwork_dashboard.py
+python examples/04_concrete-formwork_dataframe.py
 ```
 
 Outputs are written to `examples/output/` (ignored by Git). To override the
-output folder, set the `GANTTCHART_EXAMPLE_OUTPUT` environment variable.
+output folder, set the `concrete-formwork_EXAMPLE_OUTPUT` environment variable.
 The examples have fixed input data and do not depend on external files.
 
 ## Package structure
 
 ```text
-src/ganttchart/
+src/concrete_formwork/
   __init__.py                # GanttChart, Task, add_days
-  ganttchart.py              # Task management; plot() delegates to the renderer
+  concrete_formwork.py              # Task management; plot() delegates to the renderer
   utils/                     # List, vector and matrix operations
   visualization/
     __init__.py
@@ -153,13 +147,12 @@ If you use this software in technical or published work, cite the project.
 Citation details are in [`CITATION.cff`](CITATION.cff).
 
 ```bibtex
-@software{Thommes_GanttChart_2026,
+@software{Thommes_ConcreteFormwork_2026,
   author  = {Thommes, Eliott},
-  title   = {Ganttchart: A Python ganttchart library for defining schedules and 
-  plotting Gantt charts},
+  title   = {Concrete-formwork: A Python concrete formwork, },
   year    = {2026},
   version = {0.0.1},
-  url     = {https://github.com/Thomeli09/ganttchart}
+  url     = {https://github.com/Thomeli09/concrete-formwork}
 }
 ```
 
