@@ -24,33 +24,34 @@
   <ItemGroup>
     <Compile Include="examples\advanced_simulation.py" />
     <Compile Include="examples\basic_simulation.py" />
-    <Compile Include="src\coffrage\DataManagementLib.py" />
-    <Compile Include="src\coffrage\ElementLib.py" />
-    <Compile Include="src\coffrage\FormworkLib.py" />
-    <Compile Include="src\coffrage\GeometryLib.py" />
-    <Compile Include="src\coffrage\LoadingLib.py" />
-    <Compile Include="src\coffrage\MaterialLib.py" />
-    <Compile Include="src\coffrage\MathOperationLib.py" />
-    <Compile Include="src\coffrage\MeshLib.py" />
-    <Compile Include="src\coffrage\ObjectManagementLib.py" />
-    <Compile Include="src\coffrage\PlotLib.py" />
-    <Compile Include="src\coffrage\RheologyLib.py" />
-    <Compile Include="src\coffrage\SoilLib.py" />
-    <Compile Include="src\coffrage\StructuralLib.py" />
-    <Compile Include="src\coffrage\temp\rock.py" />
-    <Compile Include="src\coffrage\temp\__init__.py" />
-    <Compile Include="src\coffrage\materials\rock_material.py" />
-    <Compile Include="src\coffrage\materials\terrain_material.py" />
-    <Compile Include="src\coffrage\materials\__init__.py" />
-    <Compile Include="src\coffrage\mechanics\contact.py" />
-    <Compile Include="src\coffrage\mechanics\dynamics.py" />
-    <Compile Include="src\coffrage\mechanics\rebound.py" />
-    <Compile Include="src\coffrage\mechanics\__init__.py" />
-    <Compile Include="src\coffrage\simulation\trajectory.py" />
-    <Compile Include="src\coffrage\simulation\__init__.py" />
-    <Compile Include="src\coffrage\visualization\plot.py" />
-    <Compile Include="src\coffrage\visualization\__init__.py" />
-    <Compile Include="src\coffrage\__init__.py" />
+    <Compile Include="src\formwork\geometry\ElementLib.py" />
+    <Compile Include="src\formwork\geometry\GeometryLib.py" />
+    <Compile Include="src\formwork\geometry\LoadingLib.py" />
+    <Compile Include="src\formwork\geometry\MathOperationLib.py" />
+    <Compile Include="src\formwork\geometry\MeshLib.py" />
+    <Compile Include="src\formwork\geometry\RheologyLib.py" />
+    <Compile Include="src\formwork\geometry\SoilLib.py" />
+    <Compile Include="src\formwork\geometry\StructuralLib.py" />
+    <Compile Include="src\formwork\geometry\__init__.py" />
+    <Compile Include="src\formwork\materials\soil.py" />
+    <Compile Include="src\formwork\materials\formwork.py" />
+    <Compile Include="src\formwork\materials\concrete.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\formwork\materials\MaterialLib.py" />
+    <Compile Include="src\formwork\rheological_model\rheological_model.py" />
+    <Compile Include="src\formwork\rheological_model\__init__.py" />
+    <Compile Include="src\formwork\materials\__init__.py" />
+    <Compile Include="src\formwork\simulation\mesh.py" />
+    <Compile Include="src\formwork\simulation\fem.py" />
+    <Compile Include="src\formwork\simulation\__init__.py" />
+    <Compile Include="src\formwork\utils\data.py" />
+    <Compile Include="src\formwork\utils\__init__.py" />
+    <Compile Include="src\formwork\visualization\plot_2d.py" />
+    <Compile Include="src\formwork\visualization\plot_3d.py" />
+    <Compile Include="src\formwork\visualization\plot_basic.py" />
+    <Compile Include="src\formwork\visualization\plot_parameters.py" />
+    <Compile Include="src\formwork\__init__.py" />
     <Compile Include="tests\test_geometry.py" />
     <Compile Include="tests\test_materials.py" />
     <Compile Include="tests\test_simulation.py" />
@@ -59,12 +60,13 @@
     <Folder Include="docs\" />
     <Folder Include="examples\" />
     <Folder Include="src\" />
-    <Folder Include="src\coffrage\" />
-    <Folder Include="src\coffrage\temp\" />
-    <Folder Include="src\coffrage\materials\" />
-    <Folder Include="src\coffrage\mechanics\" />
-    <Folder Include="src\coffrage\simulation\" />
-    <Folder Include="src\coffrage\visualization\" />
+    <Folder Include="src\formwork\" />
+    <Folder Include="src\formwork\geometry\" />
+    <Folder Include="src\formwork\materials\" />
+    <Folder Include="src\formwork\rheological_model\" />
+    <Folder Include="src\formwork\simulation\" />
+    <Folder Include="src\formwork\utils\" />
+    <Folder Include="src\formwork\visualization\" />
     <Folder Include="tests\" />
   </ItemGroup>
   <ItemGroup>
@@ -74,7 +76,9 @@
     <Content Include="README.md" />
     <Content Include="requirements-dev.txt" />
     <Content Include="requirements.txt" />
-    <Content Include="src\coffrage\Structure.md" />
+    <Content Include="src\formwork\geometry\geometry.md" />
+    <Content Include="src\formwork\Structure.md" />
+    <Content Include="src\formwork\visualization\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
