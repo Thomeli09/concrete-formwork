@@ -1,18 +1,23 @@
 cff-version: 1.2.0
-title: >-
-  Coffrage: A concrete formwork computational model for the computation of the pressure exerted by fresh concrete on formwork. 
 message: >-
-  If you use this software, please cite it using the
-  metadata from this file.
+  If you use this software in scientific, educational, or published work,
+  please cite it using the metadata from this file.
 type: software
+title: >-
+  Coffrage: A concrete formwork computational model for the computation 
+  of the pressure exerted by fresh concrete on formwork. 
 authors:
-  - given-names: Eliott
-    family-names: Thommes
-    orcid: 'https://orcid.org/0009-0005-0697-2438'
-repository-code: 'https://github.com/Thomeli09/GCIV2036-2_ChuteDeBlocs'
-license: MIT
+  - family-names: Thommes
+    given-names: Eliott
+    orcid: https://orcid.org/0009-0005-0697-2438
 version: 0.0.1
-date-released: '2026-09-17'
+date-released: 2026-10-22
+license: GPL-3.0-or-later
+repository-code: https://github.com/Thomeli09/concreteformwork
+url: https://github.com/Thomeli09/concreteformwork
+keywords:
+  - scheduling
+  - matplotlib
 
 # Zenodo integration (optional):
 # 1. Enable the Zenodo webhook at zenodo.org/account/settings/github
